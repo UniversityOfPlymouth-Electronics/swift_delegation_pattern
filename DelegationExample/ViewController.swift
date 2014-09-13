@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MyModalViewControllerProtocol {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if (segue.identifier == "ModalPresentation") {
+            //Set delegate
+            let vc : MyModalViewController = segue.destinationViewController as MyModalViewController
+            vc.delegate = self
+        }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    //Conform to the protocol MyModalViewControllerProtocol
+    func doDismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-}
+} //END CLASS
 

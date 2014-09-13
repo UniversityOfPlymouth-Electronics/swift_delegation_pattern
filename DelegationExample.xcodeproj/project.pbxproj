@@ -13,6 +13,7 @@
 		07F5E0F319C47049008D6A76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0F219C47049008D6A76 /* Images.xcassets */; };
 		07F5E0F619C47049008D6A76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0F419C47049008D6A76 /* LaunchScreen.xib */; };
 		07F5E10219C47049008D6A76 /* DelegationExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E10119C47049008D6A76 /* DelegationExampleTests.swift */; };
+		07F5E10C19C47072008D6A76 /* MyModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E10B19C47072008D6A76 /* MyModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		07F5E0FB19C47049008D6A76 /* DelegationExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegationExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F5E10019C47049008D6A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F5E10119C47049008D6A76 /* DelegationExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationExampleTests.swift; sourceTree = "<group>"; };
+		07F5E10B19C47072008D6A76 /* MyModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				07F5E0EB19C47049008D6A76 /* AppDelegate.swift */,
 				07F5E0ED19C47049008D6A76 /* ViewController.swift */,
+				07F5E10B19C47072008D6A76 /* MyModalViewController.swift */,
 				07F5E0EF19C47049008D6A76 /* Main.storyboard */,
 				07F5E0F219C47049008D6A76 /* Images.xcassets */,
 				07F5E0F419C47049008D6A76 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				07F5E0EE19C47049008D6A76 /* ViewController.swift in Sources */,
 				07F5E0EC19C47049008D6A76 /* AppDelegate.swift in Sources */,
+				07F5E10C19C47072008D6A76 /* MyModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
