@@ -6,20 +6,24 @@
 //  Copyright (c) 2014 Plymouth University. All rights reserved.
 //
 
-// I SUSPECT THIS VERSION TO CREATE A RETAIN CYCLE
+// THIS VERSION CANNOT CREATE A RETAIN CYCLE :o)
 
 import UIKit
 
-protocol MyModalViewControllerProtocol {
+//Objective C only supports classes for protocol conformance, so by implication, a class protocol
+//This is rather odd given there is no ObjectiveC in this project. 
+//One argument is that UIViewController is ObjectiveC code (an assumption I would add).
+//This pattern should be applicable to code with or without reference to UIKit
+
+@objc protocol MyModalViewControllerProtocol {
     func doDismiss()
 }
 
 class MyModalViewController: UIViewController {
 
-    //The delegate might be a value type, so it cannot be weak or unowned
-    //Does this cause a retain cycle?
-    //Semantically it "suggests" ownership
-    var delegate : MyModalViewControllerProtocol?
+    //The delegate must be a reference type (class), so it can now be weak or unowned
+    //Semantically the delegate no longer implies ownership
+    weak var delegate : MyModalViewControllerProtocol?
     
     @IBAction func doDismiss(sender: AnyObject) {
         //Call dismiss method on presenting object if the delegate is set
