@@ -10,12 +10,10 @@
 
 import UIKit
 
-//Objective C only supports classes for protocol conformance, so by implication, a class protocol
-//This is rather odd given there is no ObjectiveC in this project. 
-//One argument is that UIViewController is ObjectiveC code (an assumption I would add).
-//This pattern should be applicable to code with or without reference to UIKit
+//I prefer this approach - the protocol is specified to be a class protocol
+//No textual references to ObjectiveC, keeping this clean Swift
 
-@objc protocol MyModalViewControllerProtocol {
+protocol MyModalViewControllerProtocol : class {
     func doDismiss()
 }
 
