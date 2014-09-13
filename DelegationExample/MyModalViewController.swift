@@ -10,14 +10,11 @@
 
 import UIKit
 
-//Empty protocol
+//Empty protocol - UNIQUE to UIViewController and its subclasses
 protocol MyModalViewControllerIsUIViewController { }
 
 //ONLY UIViewController and all its subclasses implement this protocol
 extension UIViewController : MyModalViewControllerIsUIViewController { }
-
-//I prefer this approach - the protocol is specified to be a class protocol
-//No textual references to ObjectiveC, keeping this clean Swift
 
 protocol MyModalViewControllerProtocol : class {
     func doDismiss()
