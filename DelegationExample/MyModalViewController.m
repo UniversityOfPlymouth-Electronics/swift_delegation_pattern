@@ -8,19 +8,17 @@
 
 #import "MyModalViewController.h"
 
-
 @interface MyModalViewController ()
 
 @end
 
-
 @implementation MyModalViewController
-
 
 - (IBAction)doDismissButton:(id)sender {
     //Tell presenting view controller to dismiss me
-    [self.delegate doDismiss];
+    if ([self.delegate respondsToSelector:@selector(doDismiss)]) {
+        [self.delegate doDismiss];
+    }
 }
-
 
 @end

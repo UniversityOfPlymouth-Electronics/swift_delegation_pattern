@@ -84,10 +84,10 @@
 		07F5E0E819C47049008D6A76 /* DelegationExample */ = {
 			isa = PBXGroup;
 			children = (
-				075D973F19C597E900717EBF /* ViewController.m */,
 				075D974019C597E900717EBF /* ViewController.h */,
-				075D974119C597E900717EBF /* MyModalViewController.m */,
+				075D973F19C597E900717EBF /* ViewController.m */,
 				075D974219C597E900717EBF /* MyModalViewController.h */,
+				075D974119C597E900717EBF /* MyModalViewController.m */,
 				07F5E0EB19C47049008D6A76 /* AppDelegate.swift */,
 				07F5E0EF19C47049008D6A76 /* Main.storyboard */,
 				07F5E0F219C47049008D6A76 /* Images.xcassets */,
