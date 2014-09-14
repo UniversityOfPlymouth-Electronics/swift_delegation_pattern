@@ -14,7 +14,7 @@ class ViewController: UIViewController, MyModalViewControllerProtocol {
     {
         if (segue.identifier == "ModalPresentation") {
             //Set delegate
-            let vc : MyModalViewController = segue.destinationViewController as MyModalViewController
+            let vc = segue.destinationViewController as MyModalViewController
             vc.delegate = self
         }
 
