@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DelegationExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Mf2-kI-Z0C" kind="presentation" identifier="ModalPresentation" id="8Dv-Ry-yJf"/>
+                                    <segue destination="Mf2-kI-Z0C" kind="presentation" identifier="ModalPresentation" id="WE3-c5-Aqd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,7 +40,7 @@
         <!--My Modal View Controller-->
         <scene sceneID="etc-2S-tKS">
             <objects>
-                <viewController id="Mf2-kI-Z0C" customClass="MyModalViewController" customModule="DelegationExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mf2-kI-Z0C" customClass="MyModalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ySo-5Z-Rc4"/>
                         <viewControllerLayoutGuide type="bottom" id="K4M-mM-hxQ"/>
@@ -55,7 +55,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="doDismiss:" destination="Mf2-kI-Z0C" eventType="touchUpInside" id="WRm-Bz-gtW"/>
+                                    <action selector="doDismissButton:" destination="Mf2-kI-Z0C" eventType="touchUpInside" id="UvR-dV-cw6"/>
                                 </connections>
                             </button>
                         </subviews>

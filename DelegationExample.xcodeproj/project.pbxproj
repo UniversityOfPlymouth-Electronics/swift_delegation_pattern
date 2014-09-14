@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075D974319C597E900717EBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075D973F19C597E900717EBF /* ViewController.m */; };
+		075D974419C597E900717EBF /* MyModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075D974119C597E900717EBF /* MyModalViewController.m */; };
 		07C051A319C56ED800831839 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 07C051A219C56ED800831839 /* README.md */; };
 		07F5E0EC19C47049008D6A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E0EB19C47049008D6A76 /* AppDelegate.swift */; };
-		07F5E0EE19C47049008D6A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E0ED19C47049008D6A76 /* ViewController.swift */; };
 		07F5E0F119C47049008D6A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0EF19C47049008D6A76 /* Main.storyboard */; };
 		07F5E0F319C47049008D6A76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0F219C47049008D6A76 /* Images.xcassets */; };
 		07F5E0F619C47049008D6A76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0F419C47049008D6A76 /* LaunchScreen.xib */; };
 		07F5E10219C47049008D6A76 /* DelegationExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E10119C47049008D6A76 /* DelegationExampleTests.swift */; };
-		07F5E10C19C47072008D6A76 /* MyModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E10B19C47072008D6A76 /* MyModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +28,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075D973F19C597E900717EBF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		075D974019C597E900717EBF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		075D974119C597E900717EBF /* MyModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModalViewController.m; sourceTree = "<group>"; };
+		075D974219C597E900717EBF /* MyModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModalViewController.h; sourceTree = "<group>"; };
 		07C051A219C56ED800831839 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		07F5E0E619C47049008D6A76 /* DelegationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F5E0EA19C47049008D6A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F5E0EB19C47049008D6A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07F5E0ED19C47049008D6A76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07F5E0F019C47049008D6A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07F5E0F219C47049008D6A76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		07F5E0F519C47049008D6A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		07F5E0FB19C47049008D6A76 /* DelegationExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegationExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F5E10019C47049008D6A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F5E10119C47049008D6A76 /* DelegationExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationExampleTests.swift; sourceTree = "<group>"; };
-		07F5E10B19C47072008D6A76 /* MyModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075D973E19C597CF00717EBF /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				075D973F19C597E900717EBF /* ViewController.m */,
+				075D974019C597E900717EBF /* ViewController.h */,
+				075D974119C597E900717EBF /* MyModalViewController.m */,
+				075D974219C597E900717EBF /* MyModalViewController.h */,
+			);
+			name = ObjC;
+			sourceTree = "<group>";
+		};
 		07F5E0DD19C47049008D6A76 = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +95,8 @@
 		07F5E0E819C47049008D6A76 /* DelegationExample */ = {
 			isa = PBXGroup;
 			children = (
+				075D973E19C597CF00717EBF /* ObjC */,
 				07F5E0EB19C47049008D6A76 /* AppDelegate.swift */,
-				07F5E0ED19C47049008D6A76 /* ViewController.swift */,
-				07F5E10B19C47072008D6A76 /* MyModalViewController.swift */,
 				07F5E0EF19C47049008D6A76 /* Main.storyboard */,
 				07F5E0F219C47049008D6A76 /* Images.xcassets */,
 				07F5E0F419C47049008D6A76 /* LaunchScreen.xib */,
@@ -218,10 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F5E0EE19C47049008D6A76 /* ViewController.swift in Sources */,
 				07F5E0EC19C47049008D6A76 /* AppDelegate.swift in Sources */,
+				075D974419C597E900717EBF /* MyModalViewController.m in Sources */,
 				07C051A319C56ED800831839 /* README.md in Sources */,
-				07F5E10C19C47072008D6A76 /* MyModalViewController.swift in Sources */,
+				075D974319C597E900717EBF /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
