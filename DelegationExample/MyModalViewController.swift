@@ -15,7 +15,6 @@ protocol MyModalViewControllerProtocol {
 }
 
 class MyModalViewController: UIViewController {
-
     //The delegate might be a value type, so it cannot be weak or unowned
     //Does this cause a retain cycle?
     //Semantically it "suggests" ownership
@@ -25,7 +24,4 @@ class MyModalViewController: UIViewController {
         //Call dismiss method on presenting object if the delegate is set
         self.delegate?.doDismiss()
     }
-
-    
-
 }
