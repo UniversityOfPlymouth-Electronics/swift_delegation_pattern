@@ -31,12 +31,9 @@ class MyModalViewController: UIViewController {
     
     // The compiler will only allow the delegate to be set to an object that conforms
     weak var delegate : protocol<MyModalViewControllerProtocol, MyModalViewControllerIsUIViewController>?
-    
+
     @IBAction func doDismiss(sender: AnyObject) {
         //Call dismiss method on presenting object if the delegate is set
         self.delegate?.doDismiss()
     }
-
-    
-
 }
