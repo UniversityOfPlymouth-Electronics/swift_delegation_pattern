@@ -27,7 +27,4 @@ class MyModalViewController: UIViewController {
         //Call dismiss method on presenting object if the delegate is set
         self.delegate?.doDismiss()
     }
-
-    
-
 }
