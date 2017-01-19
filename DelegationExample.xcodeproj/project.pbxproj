@@ -12,19 +12,8 @@
 		07F5E0F119C47049008D6A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0EF19C47049008D6A76 /* Main.storyboard */; };
 		07F5E0F319C47049008D6A76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0F219C47049008D6A76 /* Images.xcassets */; };
 		07F5E0F619C47049008D6A76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0F419C47049008D6A76 /* LaunchScreen.xib */; };
-		07F5E10219C47049008D6A76 /* DelegationExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E10119C47049008D6A76 /* DelegationExampleTests.swift */; };
 		07F5E10C19C47072008D6A76 /* MyModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E10B19C47072008D6A76 /* MyModalViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		07F5E0FC19C47049008D6A76 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 07F5E0DE19C47049008D6A76 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 07F5E0E519C47049008D6A76;
-			remoteInfo = DelegationExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07C051A219C56ED800831839 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -35,21 +24,11 @@
 		07F5E0F019C47049008D6A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07F5E0F219C47049008D6A76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		07F5E0F519C47049008D6A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		07F5E0FB19C47049008D6A76 /* DelegationExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegationExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07F5E10019C47049008D6A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07F5E10119C47049008D6A76 /* DelegationExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationExampleTests.swift; sourceTree = "<group>"; };
 		07F5E10B19C47072008D6A76 /* MyModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		07F5E0E319C47049008D6A76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		07F5E0F819C47049008D6A76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +43,6 @@
 			children = (
 				07C051A219C56ED800831839 /* README.md */,
 				07F5E0E819C47049008D6A76 /* DelegationExample */,
-				07F5E0FE19C47049008D6A76 /* DelegationExampleTests */,
 				07F5E0E719C47049008D6A76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				07F5E0E619C47049008D6A76 /* DelegationExample.app */,
-				07F5E0FB19C47049008D6A76 /* DelegationExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,23 +77,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		07F5E0FE19C47049008D6A76 /* DelegationExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				07F5E10119C47049008D6A76 /* DelegationExampleTests.swift */,
-				07F5E0FF19C47049008D6A76 /* Supporting Files */,
-			);
-			path = DelegationExampleTests;
-			sourceTree = "<group>";
-		};
-		07F5E0FF19C47049008D6A76 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				07F5E10019C47049008D6A76 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,24 +97,6 @@
 			productReference = 07F5E0E619C47049008D6A76 /* DelegationExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		07F5E0FA19C47049008D6A76 /* DelegationExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 07F5E10819C47049008D6A76 /* Build configuration list for PBXNativeTarget "DelegationExampleTests" */;
-			buildPhases = (
-				07F5E0F719C47049008D6A76 /* Sources */,
-				07F5E0F819C47049008D6A76 /* Frameworks */,
-				07F5E0F919C47049008D6A76 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				07F5E0FD19C47049008D6A76 /* PBXTargetDependency */,
-			);
-			name = DelegationExampleTests;
-			productName = DelegationExampleTests;
-			productReference = 07F5E0FB19C47049008D6A76 /* DelegationExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,11 +109,6 @@
 					07F5E0E519C47049008D6A76 = {
 						CreatedOnToolsVersion = 6.0;
 						LastSwiftMigration = 0820;
-					};
-					07F5E0FA19C47049008D6A76 = {
-						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 0820;
-						TestTargetID = 07F5E0E519C47049008D6A76;
 					};
 				};
 			};
@@ -189,7 +126,6 @@
 			projectRoot = "";
 			targets = (
 				07F5E0E519C47049008D6A76 /* DelegationExample */,
-				07F5E0FA19C47049008D6A76 /* DelegationExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +138,6 @@
 				07F5E0F119C47049008D6A76 /* Main.storyboard in Resources */,
 				07F5E0F619C47049008D6A76 /* LaunchScreen.xib in Resources */,
 				07F5E0F319C47049008D6A76 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		07F5E0F919C47049008D6A76 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +154,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		07F5E0F719C47049008D6A76 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07F5E10219C47049008D6A76 /* DelegationExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		07F5E0FD19C47049008D6A76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 07F5E0E519C47049008D6A76 /* DelegationExample */;
-			targetProxy = 07F5E0FC19C47049008D6A76 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		07F5E0EF19C47049008D6A76 /* Main.storyboard */ = {
@@ -364,42 +277,6 @@
 			};
 			name = Release;
 		};
-		07F5E10919C47049008D6A76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DelegationExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DelegationExample.app/DelegationExample";
-			};
-			name = Debug;
-		};
-		07F5E10A19C47049008D6A76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DelegationExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DelegationExample.app/DelegationExample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,15 +294,6 @@
 			buildConfigurations = (
 				07F5E10619C47049008D6A76 /* Debug */,
 				07F5E10719C47049008D6A76 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		07F5E10819C47049008D6A76 /* Build configuration list for PBXNativeTarget "DelegationExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				07F5E10919C47049008D6A76 /* Debug */,
-				07F5E10A19C47049008D6A76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
