@@ -30,9 +30,9 @@ class MyModalViewController: UIViewController {
     //      MyModalViewControllerIsUIViewController - to ensure it is of type UIViewController (or a subclass)
     
     // The compiler will only allow the delegate to be set to an object that conforms
-    weak var delegate : protocol<MyModalViewControllerProtocol, MyModalViewControllerIsUIViewController>?
+    weak var delegate : (MyModalViewControllerProtocol & MyModalViewControllerIsUIViewController)?
 
-    @IBAction func doDismiss(sender: AnyObject) {
+    @IBAction func doDismiss(_ sender: AnyObject) {
         //Call dismiss method on presenting object if the delegate is set
         self.delegate?.doDismiss()
     }
