@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController, MyModalViewControllerProtocol {
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if (segue.identifier == "ModalPresentation") {
             //Set delegate
-            let vc = segue.destinationViewController as MyModalViewController
+            let vc = segue.destination as! MyModalViewController
             vc.delegate = self
         }
 
@@ -22,7 +22,7 @@ class ViewController: UIViewController, MyModalViewControllerProtocol {
     
     //Conform to the protocol MyModalViewControllerProtocol
     func doDismiss() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 
 } //END CLASS
