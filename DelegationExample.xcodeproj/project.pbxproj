@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07C051A319C56ED800831839 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 07C051A219C56ED800831839 /* README.md */; };
 		07F5E0EC19C47049008D6A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E0EB19C47049008D6A76 /* AppDelegate.swift */; };
 		07F5E0EE19C47049008D6A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5E0ED19C47049008D6A76 /* ViewController.swift */; };
 		07F5E0F119C47049008D6A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F5E0EF19C47049008D6A76 /* Main.storyboard */; };
@@ -167,9 +166,11 @@
 				TargetAttributes = {
 					07F5E0E519C47049008D6A76 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0820;
 					};
 					07F5E0FA19C47049008D6A76 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0820;
 						TestTargetID = 07F5E0E519C47049008D6A76;
 					};
 				};
@@ -220,7 +221,6 @@
 			files = (
 				07F5E0EE19C47049008D6A76 /* ViewController.swift in Sources */,
 				07F5E0EC19C47049008D6A76 /* AppDelegate.swift in Sources */,
-				07C051A319C56ED800831839 /* README.md in Sources */,
 				07F5E10C19C47072008D6A76 /* MyModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +349,7 @@
 				INFOPLIST_FILE = DelegationExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -359,6 +360,7 @@
 				INFOPLIST_FILE = DelegationExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -377,6 +379,7 @@
 				INFOPLIST_FILE = DelegationExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DelegationExample.app/DelegationExample";
 			};
 			name = Debug;
@@ -392,6 +395,7 @@
 				INFOPLIST_FILE = DelegationExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DelegationExample.app/DelegationExample";
 			};
 			name = Release;

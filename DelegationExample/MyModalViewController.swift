@@ -20,7 +20,7 @@ class MyModalViewController: UIViewController {
     //Semantically it "suggests" ownership
     var delegate : MyModalViewControllerProtocol?
     
-    @IBAction func doDismiss(sender: AnyObject) {
+    @IBAction func doDismiss(_ sender: AnyObject) {
         //Call dismiss method on presenting object if the delegate is set
         self.delegate?.doDismiss()
     }
