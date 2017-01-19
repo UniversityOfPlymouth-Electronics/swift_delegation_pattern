@@ -23,7 +23,7 @@ class MyModalViewController: UIViewController {
     //Semantically the delegate no longer implies ownership
     weak var delegate : MyModalViewControllerProtocol?
     
-    @IBAction func doDismiss(sender: AnyObject) {
+    @IBAction func doDismiss(_ sender: AnyObject) {
         //Call dismiss method on presenting object if the delegate is set
         self.delegate?.doDismiss()
     }
